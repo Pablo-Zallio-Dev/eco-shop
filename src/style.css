@@ -1,0 +1,515 @@
+:root {
+  /* COLORS BRAND*/
+  --color-brand-primary: #658c4a;
+  --color-brand-secondary: #e7cec0;
+
+  /* COLORS BASICS */
+  --color-basic-white: #fff;
+  --color-basic-black: #000;
+  --color-basic-info: #0065ff;
+  --color-basic-success: #36b37e;
+  --color-basic-warning: #ffab00;
+  --color-basic-error: #ff5630;
+
+  /* COLORS GREY */
+  --color--grey-50: #f5f5f5;
+  --color--grey-100: #e6e6e6;
+  --color--grey-200: #ccc;
+  --color--grey-300: #b3b3b3;
+  --color--grey-400: #999;
+  --color--grey-500: #666;
+  --color--grey-600: #333;
+  --color--grey-700: #262626;
+  --color--grey-800: #191919;
+  --color--grey-900: #0d0d0d;
+
+  /* COLOR GRADIENT */
+  --color-gradient-light: #89bc68;
+
+  /* FONTS */
+
+  --font-inter: "Inter", sans-serif;
+  --font-libreBaskerville: "Libre Baskerville", serif;
+}
+
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+/* NOTAS */
+/* 
+    --Devo poner el codigo SVG, no el img.
+    --Debo quitar la clase "btn--arrow" para agregar la clase "btn--arrow--disabled" y asi nofunciona el hover.
+    --
+
+*/
+/*------------------------------------*\
+    #COMPONENTS AND MOUSE-HOVER COMPONENTS
+  \*------------------------------------*/
+
+/* *-*-*-*-* BUTTONS *-*-*-*-* */
+
+/* Button arrow */
+.btn--arrow--disabled svg path,
+.btn--arrow svg path {
+  fill: var(--color-basic-black);
+  transition: fill 0.5s ease-in-out;
+}
+
+.btn--arrow--disabled,
+.btn--arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--color-brand-secondary);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn--arrow--disabled {
+  background-color: var(--color--grey-100);
+}
+
+.btn--arrow--disabled svg path {
+  fill: var(--color--grey-400);
+}
+
+/* Button Big */
+.btn--big {
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+  border: 0;
+  border-radius: 40px;
+  background-color: var(--color-brand-primary);
+  color: var(--color-basic-white);
+  font-family: var(--font-inter);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+/* Button Small */
+.btn--small {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: 0;
+  border-radius: 40px;
+  background-color: var(--color--grey-500);
+  font-family: var(--font-inter);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: var(--color-basic-white);
+  transition: background-color 0.2s ease-in;
+}
+
+@media (1024px < width) {
+  .btn--arrow:hover svg path {
+    fill: var(--color-basic-white);
+    transition: fill 0.5s ease-in-out;
+  }
+
+  .btn--arrow:hover {
+    background-color: var(--color-brand-primary);
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .btn--big--hover:hover {
+    cursor: pointer;
+    background-color: var(--color-brand-secondary);
+    color: var(--color-brand-primary);
+  }
+
+  .btn--small:hover {
+    cursor: pointer;
+    background-color: var(--color-brand-primary);
+  }
+}
+
+/*------------------------------------*\
+#UTILITIES
+  \*------------------------------------*/
+
+/* *-*-*-*-* TEXT *-*-*-*-* */
+
+/* Titles */
+
+.heading {
+  font-family: var(--font-libreBaskerville);
+}
+
+.heading-1 {
+  font-size: 3.5rem;
+}
+
+.heading-2 {
+  font-size: 3rem;
+}
+
+.heading-3 {
+  font-size: 2.5rem;
+}
+
+.heading-4 {
+  font-size: 2rem;
+}
+
+.heading-5 {
+  font-size: 1.5rem;
+}
+
+.heading-6 {
+  font-size: 1.25rem;
+}
+
+/***************\
+  #Mobile - 320px - XS
+\***************/
+
+/****************\
+  #Tablet - 640px - S
+  \****************/
+
+@media (640px < width) {
+}
+
+/******************\
+  #Tablet L - 768px - M
+  \******************/
+
+@media (768px < width) {
+}
+
+/******************\
+  #Desktop - 1024px - L
+  \******************/
+
+@media (1024px < width) {
+}
+
+/*********************\
+  #Desktop XL - 1280px - XL
+  \*********************/
+
+@media (1280px < width) {
+}
+
+/*************\
+  #4K - 1536px - XXL
+  \*************/
+
+@media (1600px < width) {
+}
+
+/*------------------------------------*\
+  #SITE-STYLES
+  \*------------------------------------*/
+
+/***************\
+  #Mobile - 320px - XS
+\***************/
+
+/* *********** SALE BAR ********** */
+
+.sale-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  padding-block: 0.75rem;
+  width: 100%;
+  height: 40px;
+  background: #658c4a;
+  background: linear-gradient(
+    90deg,
+    rgba(101, 140, 74, 1) 0%,
+    rgba(137, 188, 104, 1) 100%
+  );
+}
+
+.sale-bar__image {
+  width: 1rem;
+}
+
+.sale-bar__image path {
+  fill: var(--color-basic-white);
+}
+
+.sale-bar__text {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-basic-white);
+}
+
+/******************\
+  #Tablet L - 768px - M
+  \******************/
+
+@media (768px < width) {
+  .sale-bar__text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-inter);
+    color: var(--color-basic-white);
+  }
+}
+
+/*********************\
+  #Desktop - 1280px - XL
+  \*********************/
+
+@media (1280px < width) {
+  .sale-bar__image {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+/* ************** SECTION HEADER ************* */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
+}
+
+.header__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header__icons__icon {
+  width: 1.5rem;
+}
+
+.header__input {
+  display: none;
+}
+
+.header__logo {
+  width: 3.75rem;
+  height: 1.5rem;
+}
+
+
+/******************\
+  #Tablet L - 768px - M
+  \******************/
+
+@media (768px < width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.5rem;
+    padding-inline: 3.75rem;
+  }
+
+  .header__icons {
+    gap: 1rem;
+  }
+
+  .header__icons__icon {
+    cursor: pointer;
+    width: 2rem;
+  }
+
+  .header__input {
+    display: flex;
+    gap: 0.5rem;
+    width: 65%;
+    border: 1px solid var(--color--grey-200);
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 40px;
+  }
+
+  .header__input__image {
+    cursor: pointer;
+  }
+
+  .header__input__text {
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    outline: none;
+    border: 0;
+  }
+
+  .header__logo {
+    width: 7.5rem;
+    height: 3rem;
+  }
+}
+
+
+/* ************** SECTION NAV ************* */
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  padding-block: .75rem;
+  padding-inline: 1rem;
+}
+
+.nav__img {
+  width: 1.5rem;
+}
+
+.nav__search {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+  border: 1px solid var(--color--grey-200);
+  border-radius: 40px;
+  padding-block: .5rem;
+  padding-inline: .75rem;
+}
+
+.nav__search__image {
+  width: 1rem;
+  height: 1rem;
+}
+
+.nav__search__input {
+  outline: none;
+  border: none;
+  font-family: var(--font-inter);
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+.nav__search__input::placeholder {
+  color: var(--color--grey-400);
+}
+
+
+/******************\
+  #Tablet L - 768px - M
+  \******************/
+
+  @media (768px < width) {
+    .nav__search, 
+    .nav__img {
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************\
+  #Tablet L - 768px - M
+  \******************/
+
+@media (768px < width) {
+}
+
+/*********************\
+  #Desktop - 1280px - XL
+  \*********************/
+
+@media (1280px < width) {
+}
+
+/* 
+
+.body--large--semibold,
+.body--large {
+  font-family: var(--font-inter);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.body--large--semibold {
+  font-weight: 600;
+}
+
+.body--normal--semibold,
+.body--normal {
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.body--normal--semibold {
+  font-weight: 600;
+}
+
+.body--small--semibold,
+.body--small {
+  font-family: var(--font-inter);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.body--small--semibold {
+  font-weight: 600;
+}
+
+.body--xsmall--semibold,
+.body--xsmall {
+  font-family: var(--font-inter);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.body--xsmall--semibold {
+  font-weight: 600;
+}
+
+.body--2xsmall--semibold,
+.body--2xsmall {
+  font-family: var(--font-inter);
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+}
+
+.body--2xsmall--semibold {
+  font-weight: 600;
+}
+ */
