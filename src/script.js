@@ -10,8 +10,8 @@ d.addEventListener("click", (e) => {
     $imgActive.classList.toggle('nav__img--disabled')
     $imgClose.classList.toggle('nav__img--disabled')
    } else {
-    $navMenu.classList.toggle('nav__menu--active')
-    $imgActive.classList.toggle('nav__img--disabled')
-    $imgClose.classList.toggle('nav__img--disabled')
+    $navMenu.classList.remove('nav__menu--active')
+    $imgActive.classList.remove('nav__img--disabled')
+    $imgClose.classList.add('nav__img--disabled')
    }
 })
