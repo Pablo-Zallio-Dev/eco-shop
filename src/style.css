@@ -601,12 +601,12 @@ html {
   position: absolute;
 }
 
-.highlight__card__image--clothing {
+.highlight__card__image--manual {
   object-position: 0 -30px;
 
 }
 
-.highlight__card__image--bedding {
+.highlight__card__image--center {
   object-position: center;
 
 }
