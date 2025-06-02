@@ -77,16 +77,16 @@ html {
 
 .btn__small {
   padding-inline: 1rem;
-  padding-block: .5rem;
+  padding-block: 0.5rem;
   border: none;
   background-color: var(--color--grey-600);
-   border-radius: 2.5rem;
-   color: var(--color-basic-white);
-   font-family: var(--font-inter);
-   font-size: .65rem;
-   letter-spacing: .009rem;
-   font-weight: 500;
-   line-height: 1rem;
+  border-radius: 2.5rem;
+  color: var(--color-basic-white);
+  font-family: var(--font-inter);
+  font-size: 0.65rem;
+  letter-spacing: 0.009rem;
+  font-weight: 500;
+  line-height: 1rem;
 }
 
 /*------------------------------------*\
@@ -544,74 +544,159 @@ html {
   }
 }
 
+/*************\
+  #4K - 1536px - XXL
+  \*************/
+
+@media (1535px < width) {
+  .home__info--clear {
+    padding-inline-start: 14.5rem;
+  }
+}
+
+/* ************** SECTION CATEGORY HIGHLIGHT ************* */
+
+.btn__small--highlight {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.highlight {
+  background-color: beige;
+  padding: 1rem;
+}
+
+.highlight__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.highlight__card {
+  position: relative;
+  width: 90%;
+  max-width: 21.5rem;
+  height: 15rem;
+  border-radius: 0.5rem;
+}
+
+.highlight__card--clothing {
+  background-image: url(../assets/images/image-mobile-highlight-01.jpg);
+  background-position: center -52px;
+  background-repeat: no-repeat;
+}
+
+.highlight__card--bedding {
+  background-image: url(../assets/images/image-mobile-highlight-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.highlight__card--accesories {
+  background-image: url(../assets/images/image-mobile-highlight-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.highlight__card--forniture {
+  background-image: url(../assets/images/image-mobile-highlight-04.jpg);
+  background-position: center;
+}
+
+.highlight__card--home {
+  background-image: url(../assets/images/image-mobile-highlight-05.jpg);
+  background-position: center;
+}
+
+.highlight__card--desktop {
+  display: none;
+}
+
+/******************\
+  #Tablet L - 768px - M
+  \******************/
+
+@media (768px < width) {
+
+
+  .highlight {
+  background-color: beige;
+  padding: 4rem;
+}
+
+
+  .highlight__card--desktop {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-libreBaskerville);
+    color: var(--color-brand-primary);
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;
+  }
+
+  .highlight__cards {
+    gap: 1.5rem;
+  }
+
+  .highlight__card {
+    max-width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .highlight__card--clothing {
+  background-image: url(../assets/images/image-desktop-highlight-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.highlight__card--bedding {
+  background-image: url(../assets/images/image-desktop-highlight-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.highlight__card--accesories {
+  background-image: url(../assets/images/image-desktop-highlight-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.highlight__card--forniture {
+  background-image: url(../assets/images/image-desktop-highlight-04.jpg);
+  background-position: center;
+}
+
+.highlight__card--home {
+  background-image: url(../assets/images/image-desktop-highlight-05.jpg);
+  background-position: center;
+}
+
+.highlight__text {
+  font-size: 40px;
+  text-align: left;
+}
+}
+
+/*********************\
+  #Desktop - 1280px - XL
+  \*********************/
+
+@media (1280px < width) {
+}
 
 /*************\
   #4K - 1536px - XXL
   \*************/
 
-  @media (1535px < width) {
-    .home__info--clear {
-      padding-inline-start: 14.5rem;
-    }
-  }
-
-
-/* ************** SECTION CATEGORY HIGHLIGHT ************* */
-
-.highlight {
-  /* border: 2px solid black; */
-  padding-inline: 1rem;
-  padding-block: 1.5rem;
+@media (1600px < width) {
 }
 
-.highlight__grid {
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  gap: 1rem;
-  grid-template-columns: repeat(1, 1fr);
-  width: 100%;
-}
-
-.highlight__card {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 90%;
-  max-width: 21.5rem;
-  height: 13rem;
-  
-  border-radius: .5rem;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-.highlight__card__btn {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-}
-
-.highlight__card__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-
-  position: absolute;
-}
-
-.highlight__card__image--manual {
-  object-position: 0 -30px;
-
-}
-
-.highlight__card__image--center {
-  object-position: center;
-
-}
-
-
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /******************\
   #Tablet L - 768px - M
   \******************/
@@ -630,8 +715,8 @@ html {
   #4K - 1536px - XXL
   \*************/
 
-  @media (1600px < width) {
-  }
+@media (1600px < width) {
+}
 
 /* 
 

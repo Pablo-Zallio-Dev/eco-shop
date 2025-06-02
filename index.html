@@ -1,109 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="src/normalize.css">
-    <link rel="stylesheet" href="src/style.css">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/normalize.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>ECO - Shop Friendly</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- ************** SECTION SALE BAR ************* -->
     <section class="sale-bar">
-        <p class="sale-bar__text">Free Shipping with minimum purchase Rp250.000</p>
-        <svg class="sale-bar__image" width="48" height="48" viewBox="0 0 48 48" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M29.9206 10.7992C29.3349 10.2134 28.3851 10.2134 27.7993 10.7992C27.2135 11.385 27.2135 12.3347 27.7993 12.9205L37.3788 22.5H7C6.17157 22.5 5.5 23.1716 5.5 24C5.5 24.8284 6.17157 25.5 7 25.5H37.3785L27.7993 35.0792C27.2135 35.665 27.2135 36.6147 27.7993 37.2005C28.3851 37.7863 29.3349 37.7863 29.9206 37.2005L42.0606 25.0605C42.3419 24.7792 42.5 24.3977 42.5 23.9999C42.5 23.602 42.3419 23.2205 42.0606 22.9392L29.9206 10.7992Z"
-                fill="#333333" />
-        </svg>
+      <p class="sale-bar__text">
+        Free Shipping with minimum purchase Rp250.000
+      </p>
+      <svg
+        class="sale-bar__image"
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M29.9206 10.7992C29.3349 10.2134 28.3851 10.2134 27.7993 10.7992C27.2135 11.385 27.2135 12.3347 27.7993 12.9205L37.3788 22.5H7C6.17157 22.5 5.5 23.1716 5.5 24C5.5 24.8284 6.17157 25.5 7 25.5H37.3785L27.7993 35.0792C27.2135 35.665 27.2135 36.6147 27.7993 37.2005C28.3851 37.7863 29.3349 37.7863 29.9206 37.2005L42.0606 25.0605C42.3419 24.7792 42.5 24.3977 42.5 23.9999C42.5 23.602 42.3419 23.2205 42.0606 22.9392L29.9206 10.7992Z"
+          fill="#333333"
+        />
+      </svg>
     </section>
 
     <!-- ************** SECTION HEADER ************* -->
     <header class="header">
-        <img class="header__logo" src="assets/images/logo.jpg" alt="">
-        <article class="header__input">
-            <img class="header__input__image" src="assets/icon/outline_icons/search-grey.svg" alt="image loupe grey">
-            <input class="header__input__text" type="text" placeholder="Search here...">
-        </article>
-        <article class="header__icons">
-            <img class="header__icons__icon" src="assets/icon/outline_icons/profile.svg" alt="icon profile">
-            <img class="header__icons__icon" src="assets/icon/outline_icons/bag.svg" alt="">
-        </article>
+      <img class="header__logo" src="assets/images/logo.jpg" alt="" />
+      <article class="header__input">
+        <img
+          class="header__input__image"
+          src="assets/icon/outline_icons/search-grey.svg"
+          alt="image loupe grey"
+        />
+        <input
+          class="header__input__text"
+          type="text"
+          placeholder="Search here..."
+        />
+      </article>
+      <article class="header__icons">
+        <img
+          class="header__icons__icon"
+          src="assets/icon/outline_icons/profile.svg"
+          alt="icon profile"
+        />
+        <img
+          class="header__icons__icon"
+          src="assets/icon/outline_icons/bag.svg"
+          alt=""
+        />
+      </article>
     </header>
-
 
     <!-- ************** SECTION NAV ************* -->
 
     <section class="nav">
-        <section class="nav__search">
-            <img class="nav__search__image" src="assets/icon/outline_icons/search-grey.svg" alt="">
-            <input class="nav__search__input" type="" placeholder="Search here...">
-        </section>
-        <img class="nav__img" src="assets/icon/outline_icons/menu.svg" alt="">
-        <img class="nav__img nav__img__close nav__img--disabled" src="assets/icon/fill_icons/close.svg" alt="">
-        <nav class="nav__menu"> <!-- agregar y quitar nav__menu--active -->
-            <a class="nav__menu__link" href="">NEW!</a>
-            <a class="nav__menu__link" href="">Clothing</a>
-            <a class="nav__menu__link" href="">Bath</a>
-            <a class="nav__menu__link" href="">Bedding</a>
-            <a class="nav__menu__link" href="">Home Goods</a>
-            <a class="nav__menu__link" href="">Forniture</a>
-            <a class="nav__menu__link" href="">Footwear</a>
-            <a class="nav__menu__link" href="">Accesories</a>
-        </nav>
+      <section class="nav__search">
+        <img
+          class="nav__search__image"
+          src="assets/icon/outline_icons/search-grey.svg"
+          alt=""
+        />
+        <input
+          class="nav__search__input"
+          type=""
+          placeholder="Search here..."
+        />
+      </section>
+      <img class="nav__img" src="assets/icon/outline_icons/menu.svg" alt="" />
+      <img
+        class="nav__img nav__img__close nav__img--disabled"
+        src="assets/icon/fill_icons/close.svg"
+        alt=""
+      />
+      <nav class="nav__menu">
+        <!-- agregar y quitar nav__menu--active -->
+        <a class="nav__menu__link" href="">NEW!</a>
+        <a class="nav__menu__link" href="">Clothing</a>
+        <a class="nav__menu__link" href="">Bath</a>
+        <a class="nav__menu__link" href="">Bedding</a>
+        <a class="nav__menu__link" href="">Home Goods</a>
+        <a class="nav__menu__link" href="">Forniture</a>
+        <a class="nav__menu__link" href="">Footwear</a>
+        <a class="nav__menu__link" href="">Accesories</a>
+      </nav>
     </section>
     <main>
-        <!-- ************** SECTION HEADER ************* -->
-        <section class="home">
-            <section class="home__info">
-                <article class="home__info--clear">
-                    <h1 class="home__info__title">Healthy cutlery, healthy body</h1>
-                    <p class="home__info__text">Upgrade your dining experience and
-                        begin your path to a healthy you right now.</p>
-                    <button class="home__info__btn btn__primary">Learn More</button>
-                </article>
-            </section>
-            <section class="home__image"></section>
+      <!-- ************** SECTION HEADER ************* -->
+      <section class="home">
+        <section class="home__info">
+          <article class="home__info--clear">
+            <h1 class="home__info__title">Healthy cutlery, healthy body</h1>
+            <p class="home__info__text">
+              Upgrade your dining experience and begin your path to a healthy
+              you right now.
+            </p>
+            <button class="home__info__btn btn__primary">Learn More</button>
+          </article>
         </section>
+        <section class="home__image"></section>
+      </section>
 
-        <!-- ************** SECTION CATEGORY HIGHLIGHT ************* -->
+      <!-- ************** SECTION CATEGORY HIGHLIGHT ************* -->
 
-        <section class="highlight">
-            <section class="highlight__grid">
-                <article class="highlight__card highlight__card--clothing">
-                    <img class="highlight__card__image highlight__card__image--manual" src="assets/images/image-mobile-highlight-01.jpg" alt="image section clothing">
-                    <button class="highlight__card__btn btn__small">Clothing</button>
-                </article>
-                <article class="highlight__card highlight__card--bedding">
-                    <img class="highlight__card__image highlight__card__image--center" src="assets/images/image-mobile-highlight-02.jpg" alt="image section bedding">
-                    <button class="highlight__card__btn btn__small">Bedding</button>
-                </article>
-                <article class="highlight__card highlight__card--bedding">
-                    <img class="highlight__card__image " src="assets/images/image-mobile-highlight-03.jpg" alt="image section accesories">
-                    <button class="highlight__card__btn btn__small">Accesories</button>
-                </article>
-                <article class="highlight__card highlight__card--bedding">
-                    <img class="highlight__card__image " src="assets/images/image-mobile-highlight-04.jpg" alt="image section furniture">
-                    <button class="highlight__card__btn btn__small">Furniture</button>
-                </article>
-                <article class="highlight__card highlight__card--bedding">
-                    <img class="highlight__card__image highlight__card__image--center" src="assets/images/image-mobile-highlight-05.jpg" alt="image section home goodds">
-                    <button class="highlight__card__btn btn__small">Home Goods</button>
-                </article>
-            </section>
+      <section class="highlight">
+        <section class="highlight__cards">
+          <article class="highlight__card highlight__card--desktop">
+            <p class="highlight__text">Category <br>for<br> you</p>
+          </article>
+          <article class="highlight__card highlight__card--clothing">
+            <button class="btn__small btn__small--highlight">Clothing</button>
+          </article>
+          <article class="highlight__card highlight__card--bedding">
+            <button class="btn__small btn__small--highlight">Bedding</button>
+          </article>
+          <article class="highlight__card highlight__card--accesories">
+            <button class="btn__small btn__small--highlight">Accesories</button>
+          </article>
+          <article class="highlight__card highlight__card--forniture">
+            <button class="btn__small btn__small--highlight">Forniture</button>
+          </article>
+          <article class="highlight__card highlight__card--home">
+            <button class="btn__small btn__small--highlight">Home Goods</button>
+          </article>
         </section>
+      </section>
     </main>
-    <br><br><br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <script src="src/script.js"></script>
-</body>
-
+  </body>
 </html>
