@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css"
+    />
     <link rel="stylesheet" href="src/normalize.css" />
     <link rel="stylesheet" href="src/style.css" />
     <title>ECO - Shop Friendly</title>
@@ -137,7 +141,70 @@
           </article>
         </section>
       </section>
+
+      <!-- ************** SECTION MOST WANTED ************* -->
+
+      <section class="wanted">
+        <h2 class="wanted__title">Our Most Wanted Products</h2>
+        <p class="wanted__subtitle">Good for environment, good for you.</p>
+        <section class="wanted__gallery">
+          <article class="wanted__card">
+            <img class="wanted__image" src="assets/images/image-products-1.jpg" alt="Image product">
+            <p class="wanted__description">Alpine Provisions | Cedar + Sandalwood Hand Soap</p>
+            <article class="wanted__prices">
+              <p class="wanted__price">Rp99.900</p>
+              <p class="wanted__price wanted__price--line">Rp250.000</p>
+            </article>
+          </article>
+          <article class="wanted__card">
+            <img class="wanted__image" src="assets/images/image-products-4.jpg" alt="Image product">
+            <p class="wanted__description">Women's Classic Sole Low Back Wool Slippers</p>
+            <article class="wanted__prices">
+              <p class="wanted__price">Rp79.900</p>
+              <p class="wanted__price wanted__price--line">Rp159.000</p>
+            </article>
+          </article>
+          <article class="wanted__card">
+            <img class="wanted__image" src="assets/images/image-products-3.jpg" alt="Image product">
+            <p class="wanted__description">Large Patterned Hamper Basket</p>
+            <article class="wanted__prices">
+              <p class="wanted__price">Rp199.900</p>
+              <p class="wanted__price wanted__price--line">Rp329.000</p>
+            </article>
+          </article>
+          <article class="wanted__card">
+            <img class="wanted__image" src="assets/images/image-products-2.jpg" alt="Image product">
+            <p class="wanted__description">Meliora | Eco Laundry Powder</p>
+            <article class="wanted__prices">
+              <p class="wanted__price">Rp79.900</p>
+              <p class="wanted__price wanted__price--line">Rp159.000</p>
+            </article>
+          </article>
+        </section>
+      </section>
+
+      <div id="my-keen-slider" class="keen-slider">
+      <div class="keen-slider__slide number-slide1">
+        
+      </div>
+      <div class="keen-slider__slide number-slide2">2</div>
+      <div class="keen-slider__slide number-slide3">3</div>
+      <div class="keen-slider__slide number-slide4">4</div>
+      <div class="keen-slider__slide number-slide5">5</div>
+      <div class="keen-slider__slide number-slide6">6</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
     </main>
+    <script>
+      var slider = new KeenSlider("#my-keen-slider", {
+        loop: true,
+        mode: "free",
+        slides: {
+          perView: 3,
+          spacing: 15,
+        },
+      })
+    </script>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <script src="src/script.js"></script>
   </body>

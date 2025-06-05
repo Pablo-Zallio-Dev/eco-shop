@@ -563,6 +563,8 @@ html {
 }
 
 .highlight {
+  display: flex;
+  justify-content: center;
   background-color: beige;
   padding: 1rem;
 }
@@ -573,6 +575,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  width: 700px;
 }
 
 .highlight__card {
@@ -620,13 +623,10 @@ html {
   \******************/
 
 @media (768px < width) {
-
-
   .highlight {
-  background-color: beige;
-  padding: 4rem;
-}
-
+    background-color: beige;
+    padding: 4rem;
+  }
 
   .highlight__card--desktop {
     display: flex;
@@ -649,37 +649,37 @@ html {
   }
 
   .highlight__card--clothing {
-  background-image: url(../assets/images/image-desktop-highlight-01.jpg);
-  background-size: cover;
-  background-position: center;
-}
+    background-image: url(../assets/images/image-desktop-highlight-01.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 
-.highlight__card--bedding {
-  background-image: url(../assets/images/image-desktop-highlight-02.jpg);
-  background-size: cover;
-  background-position: center;
-}
+  .highlight__card--bedding {
+    background-image: url(../assets/images/image-desktop-highlight-02.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 
-.highlight__card--accesories {
-  background-image: url(../assets/images/image-desktop-highlight-03.jpg);
-  background-size: cover;
-  background-position: center;
-}
+  .highlight__card--accesories {
+    background-image: url(../assets/images/image-desktop-highlight-03.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 
-.highlight__card--forniture {
-  background-image: url(../assets/images/image-desktop-highlight-04.jpg);
-  background-position: center;
-}
+  .highlight__card--forniture {
+    background-image: url(../assets/images/image-desktop-highlight-04.jpg);
+    background-position: center;
+  }
 
-.highlight__card--home {
-  background-image: url(../assets/images/image-desktop-highlight-05.jpg);
-  background-position: center;
-}
+  .highlight__card--home {
+    background-image: url(../assets/images/image-desktop-highlight-05.jpg);
+    background-position: center;
+  }
 
-.highlight__text {
-  font-size: 40px;
-  text-align: left;
-}
+  .highlight__text {
+    font-size: 40px;
+    text-align: left;
+  }
 }
 
 /*********************\
@@ -687,6 +687,9 @@ html {
   \*********************/
 
 @media (1280px < width) {
+  .highlight__cards {
+    width: 1049px;
+  }
 }
 
 /*************\
@@ -694,7 +697,131 @@ html {
   \*************/
 
 @media (1600px < width) {
+  .highlight__cards {
+    width: 100%;
+  }
 }
+
+/* ************** SECTION MOST WANTED ************* */
+
+.wanted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2.5rem;
+  background-color: var(--color-brand-primary);
+  color: var(--color-basic-white);
+}
+
+.wanted__card {
+  width: 8.5rem;
+}
+
+.wanted__description {
+  font-family: var(--font-inter);
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-block: 0.5rem;
+}
+
+.wanted__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  width: 20rem; /* 18rem sin bordes */
+
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.wanted__image {
+  width: 8.5rem;
+  border-radius: 0.5rem;
+}
+
+.wanted__prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.wanted__price {
+  font-size: 0.65rem;
+  font-family: var(--font-inter);
+}
+
+.wanted__price--line {
+  text-decoration: line-through;
+}
+
+.wanted__subtitle {
+  font-size: 0.75rem;
+  font-family: var(--font-inter);
+  line-height: 1.5rem;
+  margin-block-end: 1rem;
+}
+.wanted__title {
+  margin-block-end: 0.5rem;
+  text-align: center;
+  font-family: var(--font-libreBaskerville);
+  font-size: 1.5rem;
+}
+
+/******************\
+  #Tablet L - 768px - M
+  \******************/
+
+@media (768px < width) {
+  .wanted {
+    padding-block: 4rem;
+  }
+
+  .wanted__gallery {
+    gap: 3rem;
+    width: 700px;
+  }
+
+  .wanted__subtitle {
+    font-size: 1rem;
+  }
+
+  .wanted__title {
+    font-size: 2rem;
+  }
+}
+
+/*********************\
+  #Desktop - 1280px - XL
+  \*********************/
+
+@media (1280px < width) {
+  .wanted__card {
+    width: 17rem;
+  }
+
+  .wanted__description {
+    font-size: 1rem;
+  }
+
+  .wanted__price {
+    font-size: 0.8rem;
+    font-family: var(--font-inter);
+  }
+
+  .wanted__image {
+    width: 100%;
+  }
+
+  .wanted__gallery {
+    gap: 3rem;
+    margin-block: 2rem;
+    width: 100%;
+  }
+}
+
+
+
+
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /******************\
