@@ -819,7 +819,66 @@ html {
   }
 }
 
+/* ************** SECTION MOST WANTED ************* */
 
+.arrival {
+  display: flex;
+  flex-direction: column;
+  padding-block: 2.5rem;
+  padding-inline: 1rem;
+}
+
+
+.arrival__subtitle {
+  margin-block-end: 1.5rem;
+  color: var(--color--grey-500);
+  font-family: var(--font-inter);
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+.arrival__title {
+  margin-block-end: .25rem;
+  font-family: var(--font-libreBaskerville);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.arrival__info__btn {
+  margin: 1.5rem  auto 0;
+  width: 8rem;
+}
+
+.carrousel__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 9.25rem;
+}
+
+.carrousel__image {
+  margin-block-end: .5rem;
+  width: 100%;
+  max-width: 130px;
+}
+
+.carrousel__title {
+  margin-block-end: .5rem;
+  color: var(--color--grey-600);
+  font-family: var(--font-inter);
+  font-size: .76rem;
+  font-weight: 600;
+
+}
+
+.carrousel__price {
+  text-align: start;
+  width: 100%;
+  color: var(--color-brand-primary);
+  font-family: var(--font-inter);
+  font-size: .7rem;
+}
 
 
 
