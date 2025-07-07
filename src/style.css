@@ -858,6 +858,12 @@ html {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge antiguos */
+}
+
+.carrousel__wrap::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 /* ******************************** */
