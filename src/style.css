@@ -849,16 +849,15 @@ html {
 }
 
 .carrousel {
-  border: 2px solid grey;
   padding: 1rem;
   width: 100%;
 }
 
 .carrousel__wrap {
-  border: 2px solid rgb(185, 21, 21);
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 /* ******************************** */
@@ -867,7 +866,6 @@ html {
 
 .carrousel__card {
   scroll-snap-align: start;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
