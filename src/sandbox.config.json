@@ -1,7 +1,3 @@
 {
-  "infiniteLoopProtection": false,
-  "hardReloadOnChange": false,
-  "node": "14",
-  "template": "static",
-  "view": "browser"
+  "template": "static"
 }
